@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+int main() 
+{    
+  int i;
+  char c;
+
+  cout<<"Are you an Indian citizen?(Y/N)";
+  cin>>c;
+  cout<<"Enter your age: ";
+  cin>>i;
+
+  if(i>=18)
+    {
+      if(c == "Y")
+      {
+        cout<<"you are eligible to vote";
+        } 
+      else if (c == "N")
+      {  
+          cout<<"you are not an indian citizen";
+      } 
+      else {
+        cout<<"please enter valid nationality"
+      }
+    }
+  else
+    {cout<<"you are not eligible to vote";}
